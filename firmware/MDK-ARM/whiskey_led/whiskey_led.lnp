@@ -1,0 +1,28 @@
+--cpu Cortex-M3
+"whiskey_led\startup_stm32f100xb.o"
+"whiskey_led\leds.o"
+"whiskey_led\whiskey.o"
+"whiskey_led\main.o"
+"whiskey_led\gpio.o"
+"whiskey_led\usart.o"
+"whiskey_led\stm32f1xx_it.o"
+"whiskey_led\stm32f1xx_hal_msp.o"
+"whiskey_led\stm32f1xx_hal_gpio_ex.o"
+"whiskey_led\stm32f1xx_hal_tim.o"
+"whiskey_led\stm32f1xx_hal_tim_ex.o"
+"whiskey_led\stm32f1xx_hal_uart.o"
+"whiskey_led\stm32f1xx_hal.o"
+"whiskey_led\stm32f1xx_hal_rcc.o"
+"whiskey_led\stm32f1xx_hal_rcc_ex.o"
+"whiskey_led\stm32f1xx_hal_gpio.o"
+"whiskey_led\stm32f1xx_hal_dma.o"
+"whiskey_led\stm32f1xx_hal_cortex.o"
+"whiskey_led\stm32f1xx_hal_pwr.o"
+"whiskey_led\stm32f1xx_hal_flash.o"
+"whiskey_led\stm32f1xx_hal_flash_ex.o"
+"whiskey_led\stm32f1xx_hal_exti.o"
+"whiskey_led\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "whiskey_led\whiskey_led.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "whiskey_led.map" -o whiskey_led\whiskey_led.axf
