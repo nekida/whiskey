@@ -1,7 +1,8 @@
 #include "leds.h"
 #include "main.h"
 
-const struct {GPIO_TypeDef *port; uint16_t pin;} leds[] = {
+const struct {GPIO_TypeDef *port; uint16_t pin;} 
+leds[] = {
 	{led0_GPIO_Port, led0_Pin}, {led1_GPIO_Port, led1_Pin}, {led2_GPIO_Port, led2_Pin}, {led3_GPIO_Port, led3_Pin}, {led4_GPIO_Port, led4_Pin},
 	{led5_GPIO_Port, led5_Pin}, {led6_GPIO_Port, led6_Pin}, {led7_GPIO_Port, led7_Pin}, {led8_GPIO_Port, led8_Pin}, {led9_GPIO_Port, led9_Pin},
 	{led10_GPIO_Port, led10_Pin}
